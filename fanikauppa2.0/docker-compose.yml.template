@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   fanikauppa:
-    image: fanikauppa
+    image: fanikauppa-full
     environment:
         DB_HOST: localhost
         DB_USER: my_db_user
@@ -9,7 +9,7 @@ services:
         DB_DATABASE: my_db
         DB_TYPE: mysql2
         DB_PORT: 3306
-        PORT: 3001
+        PORT: 3009
         SECRET: tosisalainensalasanainen
     ports:
-        - 3000:3001
+        - 3000:3000
